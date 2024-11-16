@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="tcenter">Sudoku</h1>
+      </header>
+  
+      <main>
+        <section class="setup">
+          <h2 class="tcenter">Choose Difficulty</h2>
+          <div class="diff">
+            <button class="diffbtn" id="easydiff" onClick="changeDifficulty(1)">
+              Easy
+            </button>
+            <button class="diffbtn" id="mediumdiff" onClick="changeDifficulty(2)">
+              Medium
+            </button>
+            <button class="diffbtn" id="harddiff" onClick="changeDifficulty(3)">
+              Hard
+            </button>
+          </div>
+        </section>
+  
+        <section class="game">
+          <div id="board"></div>
+        </section>
+  
+        <section class="resval">
+          <button class="val" onClick="validate()">Validate</button>
+          <button class="val" onClick="reset()">Reset</button>
+        </section>
+      </main>
+  
+      <footer>
+        <p class="tcenter">Made with ❤️ </p>
+      </footer>
+    <script src="script.js "></script>
+</body>
+</html>
